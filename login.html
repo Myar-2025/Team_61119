@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تسجيل الدخول | Team 61119</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white flex items-center justify-center h-screen">
+  <form method="post" class="bg-purple-800 p-8 rounded shadow-md w-80">
+    <h2 class="text-2xl mb-4">دخول الأعضاء</h2>
+    <input name="username" placeholder="اسم المستخدم" required class="block w-full p-2 mb-4 rounded text-black">
+    <input name="password" type="password" placeholder="كلمة المرور" required class="block w-full p-2 mb-4 rounded text-black">
+    <button type="submit" class="bg-black px-4 py-2 rounded">دخول</button>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}<p class="text-red-400 mt-4">{{ messages[0] }}</p>{% endif %}
+    {% endwith %}
+  </form>
+</body>
+</html>

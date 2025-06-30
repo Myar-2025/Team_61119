@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>لوحة تحكم | Team 61119</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white p-8">
+  <header class="flex justify-between items-center mb-6">
+    <h1 class="text-xl">مرحباً {{ username }}</h1>
+    <a href="/logout" class="text-red-400">تسجيل خروج</a>
+  </header>
+
+  <section>
+    <h2 class="text-2xl mb-4">🔒 دردشة الفريق (نسخة تجريبية)</h2>
+    <div class="bg-black p-4 h-64 overflow-y-scroll rounded mb-4" id="chatBox">
+      <div><i>تم تفعيل الدردشة فقط للعرض حالياً.</i></div>
+    </div>
+    <input type="text" placeholder="اكتب رسالة..." class="w-full p-2 rounded text-black">
+  </section>
+</body>
+</html>
